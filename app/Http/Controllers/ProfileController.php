@@ -13,6 +13,11 @@ use App\Http\Requests\ProfileUpdateRequest;
 
 class ProfileController extends Controller
 {
+
+
+    public function RedirectLogin(){
+        return redirect()-route('login');
+    }
     /**
      * Display the user's profile form.
      */
